@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Formulario</title>
+<link rel="stylesheet" href="./style.css"/>
+<script type="text/javascript"></script>
+</head>
+    <body>
+
+        <div id="blocoForm">
+
+            <h1 id="cabeçalho"> Formulário de Coleta de Diretório</h1>
+            <h2 id="subcabeçalho">Informações do Aluno: </h2>
+            
+            <div id="nome">
+                <label for="nome">Nome: </label>
+                <input type="text" id="campoNome" placeholder="Digite seu primeiro nome:"/>
+            </div>
+            
+            <br>
+            
+            <div id="sobrenome">   
+                <label for="nome">Sobrenome: </label>
+                <input type="text" id="campoSobrenome"  placeholder="Digite seu sobrenome:"/>
+            </div>
+
+            <br>
+
+            <div id="Serie">   
+                <label for="Serie">Série: </label>
+                <input type="text" id="campoRG"  placeholder="Digite sua série:"/>
+            </div>
+            
+                <br>
+
+            <div id="End">   
+                <label for="End">Endereço: </label>
+                <input type="text" id="campoEnd"  placeholder="Digite seu endereço:"/>
+            </div>
+
+                <br>
+
+            <div id="Cid">   
+                <label for="Cid">Cidade: </label>
+                <input type="text" id="campoCid"  placeholder="Digite sua cidade:"/>
+            </div>
+
+                <br>
+            
+            <div id="Tel">   
+                <label for="Tel">Telefone: </label>
+                <input type="tel" id="campoTel"  placeholder="Digite seu telefone:"/>
+                <label for="Cel">Celular: </label>
+                <input type="tel" id="campoCel"  placeholder="Digite seu celular:"/>
+            </div>
+
+            <br>
+
+            <div id="email">   
+                <label for="email">E-mail: </label> 
+                <input type="email" id="campoemail"  placeholder="Digite seu email:"/>
+            </div>
+
+            <br>
+            
+            <h2 id="tricabeçalho">Informações dos responsáveis: </h2>
+
+
+            <div id="nomeresp">
+                <label for="nomeresp">Nome: </label>
+                <input type="text" id="campoSobrenomeresp" placeholder="Digite seu primeiro nome:"/>
+            </div>
+            
+            <br>
+            
+            <div id="sobrenomeresp">   
+                <label for="sobrenomeresp">Sobrenome: </label>
+                <input type="text" id="campoSobrenomeresp"  placeholder="Digite seu sobrenome:"/>
+            </div>
+
+            <br>
+
+            <div id="Telresp">   
+                <label for="Telresp">Telefone: </label>
+                <input type="tel" id="campoTelresp"  placeholder="Digite seu telefone:"/>
+                <label for="Celresp">Celular: </label>
+                <input type="tel" id="campoCelresp"  placeholder="Digite seu celular:"/>
+            </div>
+
+            <br>
+
+            <div id="emailresp">   
+                <label for="emailresp">E-mail: </label> 
+                <input type="email" id="campoemailresp"  placeholder="Digite seu email:"/>
+            </div>
+
+            <br>
+
+            <div id="aceitafrom">
+                <input type="checkbox" id="campoaceitaform" checked>
+                <label for="voluntario"> Aceitar como voluntário</label>
+
+            </div>
+            
+            <br>
+
+            <input type="checkbox" id="campodiretorio" > 
+            <label for="diretorio"> Não incluir no diretorio</label>
+
+
+
+
+
+
+
+
+
+
+
+        <div id="botao">
+            <button type="submit" id="trocar" onclick="inverte()"f>Trocar dados/time</button>
+            <button type="submit" onclick="alerta()">Você será alertado</button>
+        </div>
+    </div>
+
+
+
+    </body>
+</html>
+
+
+
+
+    <script>
+        function alerta(){
+            let nome = document.getElementById("campoNome").value
+            let sobrenome = document.getElementById("campoSobrenome").value
+            alert("Seja bem vindo ao formulario " + nome +" "+sobrenome + " :)")
+        }
+
+        function inverte(){
+            let l1 = document.getElementById("campoNome").value
+            let l2 = document.getElementById("campoSobrenome").value
+            document.getElementById("campoNome").value = l2
+            document.getElementById("campoSobrenome").value = l1
+            }
+            let idDoTimer
+            let timer = 2000
+
+
+    </script>

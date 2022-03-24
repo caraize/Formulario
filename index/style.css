@@ -1,0 +1,52 @@
+#blocoForm{
+    text-align:justify;
+    border: 1px solid #5f5555;
+    border-radius: 2px;
+    padding: 55px;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-family: sans-serif;
+}
+
+#cabeçalho{
+margin-bottom: 2em;
+}
+
+#subcabeçalho{
+    margin-right: 10em;
+    margin-bottom: 2em;
+}
+
+#tricabeçalho{
+    margin-bottom: 2em;
+    margin-top: 2em;
+    }
+    
+/*
+#nome{
+margin-right: 22em;
+font-family: sans-serif;
+
+}
+
+#sobrenome{
+margin-right: 22em;
+font-family: sans-serif;
+
+}
+*/
+#botao{
+    font-size: 1.5em;
+    font-family:sans-serif ;
+    position: absolute;
+    margin-top: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+
+
+#botao, select{
+    cursor: pointer;
+    
+}
